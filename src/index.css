@@ -1,20 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles de base qui n'interfèrent pas avec Tailwind/DaisyUI */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
 
+/* Retirer les styles qui peuvent causer des conflits */
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Si vous avez vraiment besoin de ces styles, utilisez @layer pour les intégrer correctement */
+@layer base {
+  #root {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
+
