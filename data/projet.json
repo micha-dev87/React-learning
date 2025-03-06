@@ -49,12 +49,12 @@
         "title": "Gestion d'annonce",
         "slug": "14",
         "date": "2025-03-05 16:33:47",
-        "modified": "2025-03-05 16:34:34",
+        "modified": "2025-03-06 03:53:13",
         "status": "publish",
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": false,
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces.png",
             "projet_made_with": [
                 "SQL",
                 "MySQL",
