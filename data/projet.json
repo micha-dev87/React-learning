@@ -24,15 +24,15 @@
     },
     {
         "id": 16,
-        "title": "Projet ASP  - Gestion Automobile",
+        "title": "Projet ASP MVC - Gestion Automobile",
         "slug": "projet-asp-gestion-automobile",
         "date": "2025-03-05 17:00:23",
-        "modified": "2025-03-05 17:00:23",
+        "modified": "2025-03-06 03:52:51",
         "status": "publish",
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": false,
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto.png",
             "projet_made_with": [
                 "JavaScript",
                 "HTML\/CSS",
