@@ -29,7 +29,9 @@ export default defineConfig({
     react(),
     copyUploadsPlugin()
   ],
-  base: '/React-learning/',
+  base: '/mon-portfolio/', // Si vous utilisez GitHub Pages avec le nom de repo comme chemin
+  // OU
+  // base: '/', // Si vous configurez un domaine personnalisé ou utilisez le repo comme site principal
   build: {
     manifest: true,
     outDir: 'dist',

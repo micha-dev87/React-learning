@@ -41,13 +41,13 @@ jobs:
           folder: dist # Le dossier à déployer
           branch: gh-pages # La branche où déployer
           
-      # Option 2: Déployer vers un repository externe "mon-portfolio"
+      # Option 2: Déployer vers le repository "mon-portfolio"
       - name: Checkout target repo
         uses: actions/checkout@v3
         with:
-          repository: yourusername/mon-portfolio  # Remplacez par votre nom d'utilisateur
+          repository: micha-dev87/mon-portfolio  # Lien vers votre repository cible
           token: ${{ secrets.PERSONAL_TOKEN }}    # Token avec accès au repo cible
-          path: mon-portfolio              # Dossier local temporaire
+          path: mon-portfolio                    # Dossier local temporaire
       
       - name: Copy build files to target repo
         run: |
