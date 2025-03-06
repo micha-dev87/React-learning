@@ -10,7 +10,11 @@ export default {
   plugins: [require("daisyui")],
 
   daisyui: {
-    themes: ["light", "dark", "cupcake"],
+    themes:['light', 'dark', 'cupcake', 'cyberpunk',
+      'retro', 'synthwave', 'halloween', 'forest',
+      'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
+      'black', 'luxury', 'dracula', 'cmyk', 'autumn',
+      'business', 'acid', 'lemonade', 'night', 'coffee', 'winter'],
   },
 }
 

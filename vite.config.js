@@ -12,5 +12,12 @@ export default defineConfig({
     hmr: {
       overlay: true,
     },
+    proxy: {
+      '/wp-json': {
+        target: 'https://wordpress-data.free.nf',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
   },
 })

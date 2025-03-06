@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react'
+import { Rabbit } from 'lucide-react'; // Importer le composant Rabbit de lucide-react
 
-const THEMES = ['light', 'dark', 'cupcake', 'cyberpunk', 'retro']
+import ImageGallery from './components/ImageGallery'
+import ProjectGrid from './components/ProjectGrid'
+
+const THEMES = ['light', 'dark', 'cupcake', 'cyberpunk',
+  'retro', 'synthwave', 'halloween', 'forest',
+  'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
+  'black', 'luxury', 'dracula', 'cmyk', 'autumn',
+  'business', 'acid', 'lemonade', 'night', 'coffee', 'winter']
 
 function App() {
   const [count, setCount] = useState(0)
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('night')
 
   // Ajouter un useEffect pour le thème initial
   useEffect(() => {
@@ -23,37 +31,31 @@ function App() {
   }
 
   return (
-    <div className="container mx-auto p-4">
-    <div className="flex flex-col items-center justify-center min-h-screen gap-8">
-      <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h1 className="text-3xl font-bold text-center mb-4">React Counter</h1>
-        <p className="text-center text-xl mb-4">Count: {count}</p>
-          <div className="flex justify-center gap-4">
-            
-          
-            <button className="btn btn-primary" onClick={() => setCount(count - 1)}>
-              Decrement 
-            </button>
-            <button className="btn btn-primary" onClick={() => setCount(count + 1)}>
-              Increment
-            </button>
-
-        </div>
-      </div>
-      
-      <div className="card w-96 bg-base-100 shadow-xl p-6">
-        <h2 className="text-xl font-bold text-center mb-2">Current Theme: {theme}</h2>
-        <div className="flex justify-center">
-          <button className="btn btn-secondary" onClick={toggleTheme}>
+    <div data-theme={theme} className="min-h-screen bg-base-200">
+      <div className="container mx-auto p-4">
+        <header className="py-6 flex justify-between items-center">
+          <h1 className="text-4xl font-bold">My React Gallery</h1>
+          <button onClick={toggleTheme} className="btn btn-secondary">
             Change Theme
           </button>
-        </div>
+        </header>
+        
+        <section className="py-6">
+          <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+            <Rabbit className="text-primary" /> 
+            Mes Projets WordPress
+          </h2>
+          <ProjectGrid />
+        </section>
+        
+        <footer className="mt-12 text-center">
+          <p>Built with React, Vite, Tailwind CSS & DaisyUI</p>
+        </footer>
       </div>
-    </div>
     </div>
   )
 }
 
-
-
 export default App
+
+
