@@ -40,20 +40,37 @@ jobs:
         with:
           folder: dist # Le dossier à déployer
           branch: gh-pages # La branche où déployer
-          
+      
       # Option 2: Déployer vers le repository "mon-portfolio"
-      - name: Checkout target repo
-        uses: actions/checkout@v3
-        with:
-          repository: micha-dev87/mon-portfolio  # Lien vers votre repository cible
-          token: ${{ secrets.PERSONAL_TOKEN }}    # Token avec accès au repo cible
-          path: mon-portfolio                    # Dossier local temporaire
+      # Plutôt que de faire un checkout qui échouerait, nous allons cloner et initialiser si nécessaire
+      - name: Setup target repository
+        run: |
+          mkdir -p mon-portfolio
+          cd mon-portfolio
+          git init
+          git remote add origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/micha-dev87/mon-portfolio.git
+          
+          # Essayer de récupérer la branche main, mais ne pas échouer si elle n'existe pas
+          git fetch origin main || echo "Branch main not found, creating it"
+          
+          # Vérifier si la branche existe, sinon créer une nouvelle branche
+          if git rev-parse --verify origin/main >/dev/null 2>&1; then
+            echo "Branch main exists, checking it out"
+            git checkout main
+            git pull origin main
+          else
+            echo "Creating new main branch"
+            git checkout -b main
+            # Créer un commit initial si le repo est vide
+            echo "# Mon Portfolio" > README.md
+            git add README.md
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git commit -m "Initial commit"
+          fi
       
       - name: Copy build files to target repo
         run: |
-          # Vider le répertoire cible (sauf .git)
-          find mon-portfolio -mindepth 1 -maxdepth 1 -not -name ".git" -exec rm -rf {} \;
-          
           # Copier le contenu de dist vers le répertoire cible
           cp -r dist/* mon-portfolio/
           
@@ -66,5 +83,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "Deployment from React learning repo - $(date +'%Y-%m-%d %H:%M:%S')"
-          git push
+          git commit -m "Deployment from React learning repo - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push -u origin main
