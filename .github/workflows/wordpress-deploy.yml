@@ -1,30 +1,20 @@
-name: Deploy to WordPress
+name: FTP Deploy to WordPress
 
 on:
   push:
-    branches: [ master ]
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
+    name: Deploy to FTP
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v3
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          cache: 'npm'
-      
-      - name: Install Dependencies
-        run: npm ci
+      - name: Checkout code
+        uses: actions/checkout@v3
         
-      - name: Build React App
-        run: npm run build:theme
-        
-      - name: Deploy to WordPress via FTP
+      - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -32,3 +22,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /wp-content/themes/react-app-theme/dist/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            README.md
+            .github/**
