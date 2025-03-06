@@ -1,61 +1,62 @@
-import React, { useState, useEffect } from 'react'
-import { Rabbit } from 'lucide-react'; // Importer le composant Rabbit de lucide-react
-
-import ImageGallery from './components/ImageGallery'
-import ProjectGrid from './components/ProjectGrid'
-
-const THEMES = ['light', 'dark', 'cupcake', 'cyberpunk',
-  'retro', 'synthwave', 'halloween', 'forest',
-  'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
-  'black', 'luxury', 'dracula', 'cmyk', 'autumn',
-  'business', 'acid', 'lemonade', 'night', 'coffee', 'winter']
+import React from 'react';
+import Header from './components/Header';
+import AboutSection from './components/AboutSection';
+import ProjectsSection from './components/ProjectsSection';
+import Footer from './components/Footer';
+import DownloadButton from './components/DownloadButton';
+import Typewriter from 'typewriter-effect';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [theme, setTheme] = useState('night')
-
-  // Ajouter un useEffect pour le thème initial
-  useEffect(() => {
-    // S'assurer que le thème est appliqué au chargement
-    document.querySelector('html').setAttribute('data-theme', theme)
-  }, [])
-
-  const toggleTheme = () => {
-    const currentIndex = THEMES.indexOf(theme)
-    const nextIndex = (currentIndex + 1) % THEMES.length
-    const nextTheme = THEMES[nextIndex]
-    setTheme(nextTheme)
-    
-    // Cibler spécifiquement l'élément html pour le changement de thème
-    document.querySelector('html').setAttribute('data-theme', nextTheme)
-  }
-
   return (
-    <div data-theme={theme} className="min-h-screen bg-base-200">
-      <div className="container mx-auto p-4">
-        <header className="py-6 flex justify-between items-center">
-          <h1 className="text-4xl font-bold">My React Gallery</h1>
-          <button onClick={toggleTheme} className="btn btn-secondary">
-            Change Theme
-          </button>
-        </header>
-        
-        <section className="py-6">
-          <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-            <Rabbit className="text-primary" /> 
-            Mes Projets WordPress
-          </h2>
-          <ProjectGrid />
+    <div className="min-h-screen bg-base-100" id="top">
+      <Header />
+      
+      <main className="pt-20">
+        {/* Hero Section */}
+        <section className="hero min-h-screen bg-base-200 bg-gradient-to-br from-base-100 to-base-300">
+          <div className="hero-content text-center">
+            <div className="max-w-xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">
+                <div className="text-primary mb-2">
+                  <Typewriter
+                    options={{
+                      strings: ['MICHEL ANGE TAMGHO FOGUE'],
+                      autoStart: true,
+                      loop: true,
+                      delay: 75,
+                      pauseFor: 2500,
+                    }}
+                  />
+                </div>
+                <div className="mb-2">Développeur</div>
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
+                  Web Full-Stack
+                </div>
+              </h1>
+              <p className="py-6 text-lg opacity-80">
+                Bienvenue sur mon portfolio. Je conçois et développe des applications web modernes, 
+                robustes et évolutives pour répondre aux besoins spécifiques de chaque projet.
+              </p>
+              <button 
+                onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                className="btn btn-primary btn-lg mt-4"
+              >
+                Voir mes projets
+              </button>
+            </div>
+          </div>
         </section>
         
-        <footer className="mt-12 text-center">
-          <p>Built with React, Vite, Tailwind CSS & DaisyUI</p>
-        </footer>
-      </div>
+        <AboutSection />
+        <ProjectsSection />
+      </main>
+      
+      <Footer />
+      <DownloadButton cvUrl="/votre-cv.pdf" />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
 
 
