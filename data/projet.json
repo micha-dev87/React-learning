@@ -4,7 +4,7 @@
         "title": "Projet ASP (CORE)  - Gestion Automobile",
         "slug": "projet-asp-core-gestion-automobile",
         "date": "2025-03-05 17:01:47",
-        "modified": "2025-03-06 03:46:15",
+        "modified": "2025-03-06 03:52:17",
         "status": "publish",
         "excerpt": "",
         "content": "",
@@ -32,7 +32,7 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto.png",
+            "projet_image": false,
             "projet_made_with": [
                 "JavaScript",
                 "HTML\/CSS",
@@ -54,7 +54,7 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces.png",
+            "projet_image": false,
             "projet_made_with": [
                 "SQL",
                 "MySQL",
