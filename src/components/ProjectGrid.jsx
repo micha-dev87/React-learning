@@ -28,16 +28,20 @@ const ProjectGrid = () => {
     let imageUrl = null;
     
     // Try to get medium_large or large image first for better quality
-    if (imageObj.sizes.medium_large) imageUrl = imageObj.sizes.medium_large;
-    else if (imageObj.sizes.thumbnail) imageUrl = imageObj.sizes.thumbnail;
-    else if (imageObj.sizes.large) imageUrl = imageObj.sizes.large;
-    else if (imageObj.sizes.medium) imageUrl = imageObj.sizes.medium;
-    else imageUrl = imageObj.url;
+    if (imageObj.sizes && imageObj.sizes.medium_large) imageUrl = imageObj.sizes.medium_large;
+    else if (imageObj.sizes && imageObj.sizes.thumbnail) imageUrl = imageObj.sizes.thumbnail;
+    else if (imageObj.sizes && imageObj.sizes.large) imageUrl = imageObj.sizes.large;
+    else if (imageObj.sizes && imageObj.sizes.medium) imageUrl = imageObj.sizes.medium;
+    else if (imageObj.url) imageUrl = imageObj.url;
+    else return null;
     
-    // Transform the URL to use local path
+    // Transform the URL for both development and production
     if (imageUrl) {
-      // Replace 'https://wordpress-data.free.nf/wp-content/' with local path
-      return imageUrl.replace('https://wordpress-data.free.nf/wp-content/', '');
+      // Replace WordPress URL with local path
+      const localPath = imageUrl.replace('https://wordpress-data.free.nf/wp-content/', '');
+      
+      // Handle both development and production paths
+      return localPath;
     }
     
     return null;
@@ -71,7 +75,8 @@ const ProjectGrid = () => {
                 className="w-full h-full object-cover" 
                 onError={(e) => {
                   console.error(`Failed to load image for project ${project.id}`);
-                  e.target.src = 'https://placehold.co/800x600?text=No+Image';
+                  // Utiliser une image de fallback
+                  e.target.src = '/placeholder.jpg';
                 }}
               />
             </div>
