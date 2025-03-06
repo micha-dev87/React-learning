@@ -1,0 +1,69 @@
+[
+    {
+        "id": 20,
+        "title": "Projet ASP (CORE)  - Gestion Automobile",
+        "slug": "projet-asp-core-gestion-automobile",
+        "date": "2025-03-05 17:01:47",
+        "modified": "2025-03-06 03:20:57",
+        "status": "publish",
+        "excerpt": "",
+        "content": "",
+        "fields": {
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto.png",
+            "projet_made_with": [
+                "SQL",
+                "HTML\/CSS",
+                "C#",
+                "ASP.NET\/CORE",
+                "ADO\/NET",
+                "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
+            ],
+            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l’identifiant de sa marque et l’identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L’application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_url": ""
+        }
+    },
+    {
+        "id": 16,
+        "title": "Projet ASP  - Gestion Automobile",
+        "slug": "projet-asp-gestion-automobile",
+        "date": "2025-03-05 17:00:23",
+        "modified": "2025-03-05 17:00:23",
+        "status": "publish",
+        "excerpt": "",
+        "content": "",
+        "fields": {
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto.png",
+            "projet_made_with": [
+                "JavaScript",
+                "HTML\/CSS",
+                "ASP.NET\/MVC",
+                "ADO\/NET",
+                "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
+            ],
+            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l’identifiant de sa marque et l’identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L’application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_url": ""
+        }
+    },
+    {
+        "id": 14,
+        "title": "Gestion d'annonce",
+        "slug": "14",
+        "date": "2025-03-05 16:33:47",
+        "modified": "2025-03-05 16:34:34",
+        "status": "publish",
+        "excerpt": "",
+        "content": "",
+        "fields": {
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces.png",
+            "projet_made_with": [
+                "SQL",
+                "MySQL",
+                "JavaScript",
+                "HTML\/CSS",
+                "PHP"
+            ],
+            "projet_description": "Site Web de petites annonces, genre LesPAC, réservé dans un premier temps au personnel du cé- gep, du moins jusqu’à ce que l’application soit complètement rodée, et éventuellement à toute la communauté collégiale.",
+            "projet_url": "https:\/\/projet2.ct.ws\/"
+        }
+    }
+]
