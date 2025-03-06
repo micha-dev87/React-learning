@@ -1,5 +1,67 @@
 [
     {
+        "id": 26,
+        "title": "App de Gestion d'Utilisateurs",
+        "slug": "app-de-gestion-dutilisateurs",
+        "date": "2025-03-06 14:38:19",
+        "modified": "2025-03-06 14:38:19",
+        "status": "publish",
+        "excerpt": "",
+        "content": "",
+        "fields": {
+            "projet_image": {
+                "ID": 27,
+                "id": 27,
+                "title": "20250303_065344410_iOS",
+                "filename": "20250303_065344410_iOS.png",
+                "filesize": 1085389,
+                "url": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS.png",
+                "link": "https:\/\/wordpress-data.free.nf\/projet\/app-de-gestion-dutilisateurs\/20250303_065344410_ios\/",
+                "alt": "",
+                "author": "1",
+                "description": "",
+                "caption": "",
+                "name": "20250303_065344410_ios",
+                "status": "inherit",
+                "uploaded_to": 26,
+                "date": "2025-03-06 19:36:57",
+                "modified": "2025-03-06 19:36:57",
+                "menu_order": 0,
+                "mime_type": "image\/png",
+                "type": "image",
+                "subtype": "png",
+                "icon": "https:\/\/wordpress-data.free.nf\/wp-includes\/images\/media\/default.png",
+                "width": 1284,
+                "height": 2778,
+                "sizes": {
+                    "thumbnail": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-150x150.png",
+                    "thumbnail-width": 150,
+                    "thumbnail-height": 150,
+                    "medium": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-139x300.png",
+                    "medium-width": 139,
+                    "medium-height": 300,
+                    "medium_large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-768x1662.png",
+                    "medium_large-width": 768,
+                    "medium_large-height": 1662,
+                    "large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-473x1024.png",
+                    "large-width": 473,
+                    "large-height": 1024,
+                    "1536x1536": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-710x1536.png",
+                    "1536x1536-width": 710,
+                    "1536x1536-height": 1536,
+                    "2048x2048": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-947x2048.png",
+                    "2048x2048-width": 947,
+                    "2048x2048-height": 2048
+                }
+            },
+            "projet_made_with": [
+                "HTML\/CSS"
+            ],
+            "projet_description": "L'application permet : 1.   D'afficher une liste d'utilisateurs avec leurs photos. 2.   D'ajouter et de supprimer des utilisateurs de la liste. 3.   De naviguer vers un écran de détails où l'utilisateur peut voir une image plus grande. 4.   D'enregistrer un nouvel utilisateur via un formulaire avec validation.",
+            "projet_url": ""
+        }
+    },
+    {
         "id": 20,
         "title": "Projet ASP (CORE)  - Gestion Automobile",
         "slug": "projet-asp-core-gestion-automobile",
