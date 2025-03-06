@@ -4,7 +4,7 @@
         "title": "App de Gestion d'Utilisateurs",
         "slug": "app-de-gestion-dutilisateurs",
         "date": "2025-03-06 14:38:19",
-        "modified": "2025-03-06 14:38:19",
+        "modified": "2025-03-06 14:45:20",
         "status": "publish",
         "excerpt": "",
         "content": "",
@@ -55,6 +55,8 @@
                 }
             },
             "projet_made_with": [
+                "ReactNative",
+                "JavaScript",
                 "HTML\/CSS"
             ],
             "projet_description": "L'application permet : 1.   D'afficher une liste d'utilisateurs avec leurs photos. 2.   D'ajouter et de supprimer des utilisateurs de la liste. 3.   De naviguer vers un écran de détails où l'utilisateur peut voir une image plus grande. 4.   D'enregistrer un nouvel utilisateur via un formulaire avec validation.",
