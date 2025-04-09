@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-neutral text-neutral-content" id="contact">
-      <div className="container mx-auto">
+      <div className="container mx-auto dflex justify-center">
         <div className="footer p-10 flex flex-col items-center">
           <div className="text-center flex flex-col items-center">
             <span className="footer-title  opacity-100 text-primary">Mon Portfolio</span>
@@ -35,15 +35,15 @@ const Footer = () => {
             <span className="footer-title opacity-100 text-primary">Contact</span>
             <a className="link link-hover flex items-center gap-2 justify-center">
               <Phone size={16} />
-              <span>+1 (123) 456-7890</span>
+              <span>+1 (450) 822-1064</span>
             </a>
-            <a href="mailto:contact@example.com" className="link link-hover flex items-center gap-2 justify-center">
+            <a href="mailto:angeltamgho87@gmail.com" className="link link-hover flex items-center gap-2 justify-center">
               <Mail size={16} />
-              <span>contact@example.com</span>
+              <span>angeltamgho87@gmail.com</span>
             </a>
             <a className="link link-hover flex items-center gap-2 justify-center">
               <MapPin size={16} />
-              <span>Montréal, QC</span>
+              <span>Brossard, QC, Canada</span>
             </a>
           </div>
           <div className="text-center mt-4 flex flex-col items-center">
