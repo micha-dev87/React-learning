@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
             <a href="mailto:angeltamgho87@gmail.com" className="link link-hover flex items-center gap-2 justify-center">
               <Mail size={16} />
-              <span>angeltamgho87@gmail.com</span>
+              <span>angeltamgho87@gmail.com </span>
             </a>
             <a className="link link-hover flex items-center gap-2 justify-center">
               <MapPin size={16} />
