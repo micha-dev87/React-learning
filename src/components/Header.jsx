@@ -14,6 +14,18 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Disable scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   const scrollToSection = (id) => {
     setIsOpen(false);
     const element = document.getElementById(id);
@@ -78,6 +90,7 @@ const Header = () => {
             <button 
               className="btn btn-ghost btn-circle" 
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -85,9 +98,20 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
+      {/* Mobile menu - CORRIGÉ pour avoir un fond solide et un bouton de fermeture distinct */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 bg-base-100 z-50 pt-16 px-4 pb-6">
+        <div className="md:hidden fixed inset-0 bg-base-100 z-50 pt-16 pb-6 px-4">
+          <div className="flex justify-between items-center pb-4 border-b border-base-300">
+            <h2 className="text-lg font-bold">Menu</h2>
+            <button 
+              className="btn btn-ghost btn-circle" 
+              onClick={() => setIsOpen(false)}
+              aria-label="Fermer le menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+          
           <ul className="menu menu-lg w-full p-4 gap-2">
             <li>
               <a 
