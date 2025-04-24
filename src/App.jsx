@@ -52,7 +52,7 @@ function App() {
       </main>
       
       <Footer />
-      <DownloadButton cvUrl="uploads/2025/03/CV_MICHEL-Stage.pdf" />
+      <DownloadButton cvUrl="uploads/2025/03/cv.pdf" />
     </div>
   );
 }
