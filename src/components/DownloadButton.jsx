@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FileDown, X } from 'lucide-react';
 
-const DownloadButton = ({ cvUrl = "/cv.pdf" }) => {
+const DownloadButton = ({ cvUrl = "uploads/2025/03/CV_MICHEL-Stage.pdf" }) => {
   const [visible, setVisible] = useState(false);
   
   useEffect(() => {

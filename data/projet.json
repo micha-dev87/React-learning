@@ -96,7 +96,7 @@
         "excerpt": "Application de gestion de boutique en ligne avec connexion client, gestion de panier et génération de factures.",
         "content": "",
         "fields": {
-            "projet_image": "dist/uploads/2025/03/jakarta1.png",
+            "projet_image": "uploads/2025/03/jakarta1.png",
             "projet_made_with": [
                 "JAVA",
                 "JAKARTA EE",
