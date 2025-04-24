@@ -31,9 +31,13 @@ const Header = () => {
     const element = document.getElementById(id);
     if (element) {
       const offset = 80; // Header height
+      // Get the offset of the element from the top of the page
       const bodyRect = document.body.getBoundingClientRect().top;
+      // Get the offset of the element from the top of the page
       const elementRect = element.getBoundingClientRect().top;
+      // Get the position of the element relative to the top of the page
       const elementPosition = elementRect - bodyRect;
+      // Get the offset position of the element relative to the top of the page
       const offsetPosition = elementPosition - offset;
 
       window.scrollTo({
@@ -98,9 +102,9 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile menu - CORRIGÉ pour avoir un fond solide et un bouton de fermeture distinct */}
+      {/* Mobile menu - Adapté pour le scroll */}
       {isOpen && (
-        <div className="md:hidden fixed inset-0 bg-base-100 z-50 pt-16 pb-6 px-4">
+        <div className="md:hidden fixed h-screen inset-0 bg-base-100 z-50 pt-16 pb-6 px-4 overflow-y-auto">
           <div className="flex justify-between items-center pb-4 border-b border-base-300">
             <h2 className="text-lg font-bold">Menu</h2>
             <button 
@@ -115,7 +119,7 @@ const Header = () => {
           <ul className="menu menu-lg w-full p-4 gap-2">
             <li>
               <a 
-                onClick={() => scrollToSection('about')}
+                onClick={() => { scrollToSection('about'); setIsOpen(false); }}
                 className="text-lg py-4"
               >
                 À propos
@@ -123,7 +127,7 @@ const Header = () => {
             </li>
             <li>
               <a 
-                onClick={() => scrollToSection('projects')}
+                onClick={() => { scrollToSection('projects'); setIsOpen(false); }}
                 className="text-lg py-4"
               >
                 Mes Projets
@@ -131,7 +135,7 @@ const Header = () => {
             </li>
             <li>
               <a 
-                onClick={() => scrollToSection('contact')}
+                onClick={() => { scrollToSection('contact'); setIsOpen(false); }}
                 className="text-lg py-4 text-primary"
               >
                 Contact
