@@ -61,7 +61,7 @@
                 "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
             ],
             "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l'identifiant de sa marque et l'identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L'application permet aussi la gestion des connexions des utilisateurs.",
-            "projet_url": "https://github.com/micha-dev87/ASP-NET-MVC"
+            "projet_url": "https://github.com/micha-dev87/ASP-NET-CORE-MVC"
         }
     },
     {
