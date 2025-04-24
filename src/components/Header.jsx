@@ -4,6 +4,7 @@ import { Code, Menu, X, ChevronRight } from 'lucide-react';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('');
 
   // Handle scroll effect for transparent to solid header transition
   useEffect(() => {
@@ -25,6 +26,31 @@ const Header = () => {
       document.body.style.overflow = 'auto';
     };
   }, [isOpen]);
+
+  // Handle scroll effect for active section
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'projects', 'contact'];
+      const scrollPosition = window.scrollY + 100; // Adjust offset as needed
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          // obtenir la position de l'élément par rapport au haut de la page
+          const offsetTop = element.offsetTop;
+          // obtenir la hauteur de l'élément
+          const offsetHeight = element.offsetHeight;
+          // si la position de l'élément est supérieure ou égale à la position de l'utilisateur et inférieure à la position de l'élément plus sa hauteur, alors l'élément est actif
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section);
+          }
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (id) => {
     setIsOpen(false);
@@ -64,7 +90,7 @@ const Header = () => {
               <li>
                 <a 
                   onClick={() => scrollToSection('about')}
-                  className="btn btn-ghost hover:bg-primary/10 font-medium"
+                  className={`btn btn-ghost hover:bg-primary/10 font-medium ${activeSection === 'about' ? 'bg-primary text-white' : ''}`}
                 >
                   À propos
                 </a>
@@ -72,7 +98,7 @@ const Header = () => {
               <li>
                 <a 
                   onClick={() => scrollToSection('projects')}
-                  className="btn btn-ghost hover:bg-primary/10 font-medium"
+                  className={`btn btn-ghost hover:bg-primary/10 font-medium ${activeSection === 'projects' ? 'bg-primary text-white' : ''}`}
                 >
                   Mes Projets
                 </a>
@@ -80,7 +106,7 @@ const Header = () => {
               <li>
                 <a 
                   onClick={() => scrollToSection('contact')}
-                  className="btn btn-primary text-white"
+                  className={`btn btn-ghost hover:bg-primary/10 font-medium ${activeSection === 'contact' ? 'bg-primary text-white' : ''}`}
                 >
                   Contact
                   <ChevronRight size={16} />
@@ -121,6 +147,7 @@ const Header = () => {
               <a 
                 onClick={() => { scrollToSection('about'); setIsOpen(false); }}
                 className="text-lg py-4"
+                style={{ color: activeSection === 'about' ? 'var(--primary)' : 'inherit' }}
               >
                 À propos
               </a>
@@ -129,6 +156,7 @@ const Header = () => {
               <a 
                 onClick={() => { scrollToSection('projects'); setIsOpen(false); }}
                 className="text-lg py-4"
+                style={{ color: activeSection === 'projects' ? 'var(--primary)' : 'inherit' }}
               >
                 Mes Projets
               </a>
@@ -136,7 +164,8 @@ const Header = () => {
             <li>
               <a 
                 onClick={() => { scrollToSection('contact'); setIsOpen(false); }}
-                className="text-lg py-4 text-primary"
+                className="text-lg py-4"
+                style={{ color: activeSection === 'contact' ? 'var(--primary)' : 'inherit' }}
               >
                 Contact
               </a>
