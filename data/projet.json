@@ -9,58 +9,14 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": {
-                "ID": 27,
-                "id": 27,
-                "title": "20250303_065344410_iOS",
-                "filename": "20250303_065344410_iOS.png",
-                "filesize": 1085389,
-                "url": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS.png",
-                "link": "https:\/\/wordpress-data.free.nf\/projet\/app-de-gestion-dutilisateurs\/20250303_065344410_ios\/",
-                "alt": "",
-                "author": "1",
-                "description": "",
-                "caption": "",
-                "name": "20250303_065344410_ios",
-                "status": "inherit",
-                "uploaded_to": 26,
-                "date": "2025-03-06 19:36:57",
-                "modified": "2025-03-06 19:36:57",
-                "menu_order": 0,
-                "mime_type": "image\/png",
-                "type": "image",
-                "subtype": "png",
-                "icon": "https:\/\/wordpress-data.free.nf\/wp-includes\/images\/media\/default.png",
-                "width": 1284,
-                "height": 2778,
-                "sizes": {
-                    "thumbnail": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-150x150.png",
-                    "thumbnail-width": 150,
-                    "thumbnail-height": 150,
-                    "medium": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-139x300.png",
-                    "medium-width": 139,
-                    "medium-height": 300,
-                    "medium_large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-768x1662.png",
-                    "medium_large-width": 768,
-                    "medium_large-height": 1662,
-                    "large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-473x1024.png",
-                    "large-width": 473,
-                    "large-height": 1024,
-                    "1536x1536": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-710x1536.png",
-                    "1536x1536-width": 710,
-                    "1536x1536-height": 1536,
-                    "2048x2048": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-947x2048.png",
-                    "2048x2048-width": 947,
-                    "2048x2048-height": 2048
-                }
-            },
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-768x1662.png",
             "projet_made_with": [
                 "ReactNative",
                 "JavaScript",
                 "HTML\/CSS"
             ],
             "projet_description": "L'application permet : 1.   D'afficher une liste d'utilisateurs avec leurs photos. 2.   D'ajouter et de supprimer des utilisateurs de la liste. 3.   De naviguer vers un écran de détails où l'utilisateur peut voir une image plus grande. 4.   D'enregistrer un nouvel utilisateur via un formulaire avec validation.",
-            "projet_url": ""
+            "projet_url": "https://github.com/micha-dev87/Application-expo-gestion-des-utilisateurs"
         }
     },
     {
@@ -73,51 +29,7 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": {
-                "ID": 24,
-                "id": 24,
-                "title": "Razor page Auto",
-                "filename": "Razor-page-Auto.png",
-                "filesize": 1560184,
-                "url": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto.png",
-                "link": "https:\/\/wordpress-data.free.nf\/projet\/projet-asp-core-gestion-automobile\/razor-page-auto\/",
-                "alt": "",
-                "author": "1",
-                "description": "",
-                "caption": "",
-                "name": "razor-page-auto",
-                "status": "inherit",
-                "uploaded_to": 20,
-                "date": "2025-03-06 08:50:44",
-                "modified": "2025-03-06 08:50:44",
-                "menu_order": 0,
-                "mime_type": "image\/png",
-                "type": "image",
-                "subtype": "png",
-                "icon": "https:\/\/wordpress-data.free.nf\/wp-includes\/images\/media\/default.png",
-                "width": 2510,
-                "height": 1235,
-                "sizes": {
-                    "thumbnail": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-150x150.png",
-                    "thumbnail-width": 150,
-                    "thumbnail-height": 150,
-                    "medium": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-300x148.png",
-                    "medium-width": 300,
-                    "medium-height": 148,
-                    "medium_large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-768x378.png",
-                    "medium_large-width": 768,
-                    "medium_large-height": 378,
-                    "large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-1024x504.png",
-                    "large-width": 1024,
-                    "large-height": 504,
-                    "1536x1536": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-1536x756.png",
-                    "1536x1536-width": 1536,
-                    "1536x1536-height": 756,
-                    "2048x2048": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-2048x1008.png",
-                    "2048x2048-width": 2048,
-                    "2048x2048-height": 1008
-                }
-            },
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-768x378.png",
             "projet_made_with": [
                 "SQL",
                 "HTML\/CSS",
@@ -126,8 +38,8 @@
                 "ADO\/NET",
                 "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
             ],
-            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l’identifiant de sa marque et l’identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L’application permet aussi la gestion des connexions des utilisateurs.",
-            "projet_url": ""
+            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l'identifiant de sa marque et l'identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L'application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_url": "https://github.com/micha-dev87/ASP-NET-CORE-MVC"
         }
     },
     {
@@ -140,51 +52,7 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": {
-                "ID": 23,
-                "id": 23,
-                "title": "MVC Page Auto",
-                "filename": "MVC-Page-Auto.png",
-                "filesize": 1846647,
-                "url": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto.png",
-                "link": "https:\/\/wordpress-data.free.nf\/projet\/projet-asp-core-gestion-automobile\/mvc-page-auto\/",
-                "alt": "",
-                "author": "1",
-                "description": "",
-                "caption": "",
-                "name": "mvc-page-auto",
-                "status": "inherit",
-                "uploaded_to": 20,
-                "date": "2025-03-06 08:50:30",
-                "modified": "2025-03-06 08:50:30",
-                "menu_order": 0,
-                "mime_type": "image\/png",
-                "type": "image",
-                "subtype": "png",
-                "icon": "https:\/\/wordpress-data.free.nf\/wp-includes\/images\/media\/default.png",
-                "width": 2509,
-                "height": 1234,
-                "sizes": {
-                    "thumbnail": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-150x150.png",
-                    "thumbnail-width": 150,
-                    "thumbnail-height": 150,
-                    "medium": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-300x148.png",
-                    "medium-width": 300,
-                    "medium-height": 148,
-                    "medium_large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-768x378.png",
-                    "medium_large-width": 768,
-                    "medium_large-height": 378,
-                    "large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-1024x504.png",
-                    "large-width": 1024,
-                    "large-height": 504,
-                    "1536x1536": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-1536x755.png",
-                    "1536x1536-width": 1536,
-                    "1536x1536-height": 755,
-                    "2048x2048": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-2048x1007.png",
-                    "2048x2048-width": 2048,
-                    "2048x2048-height": 1007
-                }
-            },
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-768x378.png",
             "projet_made_with": [
                 "JavaScript",
                 "HTML\/CSS",
@@ -192,8 +60,8 @@
                 "ADO\/NET",
                 "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
             ],
-            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l’identifiant de sa marque et l’identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L’application permet aussi la gestion des connexions des utilisateurs.",
-            "projet_url": ""
+            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l'identifiant de sa marque et l'identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L'application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_url": "https://github.com/micha-dev87/ASP-NET-MVC"
         }
     },
     {
@@ -206,51 +74,7 @@
         "excerpt": "",
         "content": "",
         "fields": {
-            "projet_image": {
-                "ID": 25,
-                "id": 25,
-                "title": "projet gestion des annonces",
-                "filename": "projet-gestion-des-annonces.png",
-                "filesize": 592285,
-                "url": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces.png",
-                "link": "https:\/\/wordpress-data.free.nf\/projet\/projet-asp-core-gestion-automobile\/projet-gestion-des-annonces\/",
-                "alt": "",
-                "author": "1",
-                "description": "",
-                "caption": "",
-                "name": "projet-gestion-des-annonces",
-                "status": "inherit",
-                "uploaded_to": 20,
-                "date": "2025-03-06 08:51:54",
-                "modified": "2025-03-06 08:51:54",
-                "menu_order": 0,
-                "mime_type": "image\/png",
-                "type": "image",
-                "subtype": "png",
-                "icon": "https:\/\/wordpress-data.free.nf\/wp-includes\/images\/media\/default.png",
-                "width": 2454,
-                "height": 1279,
-                "sizes": {
-                    "thumbnail": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-150x150.png",
-                    "thumbnail-width": 150,
-                    "thumbnail-height": 150,
-                    "medium": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-300x156.png",
-                    "medium-width": 300,
-                    "medium-height": 156,
-                    "medium_large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-768x400.png",
-                    "medium_large-width": 768,
-                    "medium_large-height": 400,
-                    "large": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-1024x534.png",
-                    "large-width": 1024,
-                    "large-height": 534,
-                    "1536x1536": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-1536x801.png",
-                    "1536x1536-width": 1536,
-                    "1536x1536-height": 801,
-                    "2048x2048": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-2048x1067.png",
-                    "2048x2048-width": 2048,
-                    "2048x2048-height": 1067
-                }
-            },
+            "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-768x400.png",
             "projet_made_with": [
                 "SQL",
                 "MySQL",
@@ -258,8 +82,31 @@
                 "HTML\/CSS",
                 "PHP"
             ],
-            "projet_description": "Site Web de petites annonces, genre LesPAC, réservé dans un premier temps au personnel du cé- gep, du moins jusqu’à ce que l’application soit complètement rodée, et éventuellement à toute la communauté collégiale.",
+            "projet_description": "Site Web de petites annonces, genre LesPAC, réservé dans un premier temps au personnel du cé- gep, du moins jusqu'à ce que l'application soit complètement rodée, et éventuellement à toute la communauté collégiale.",
             "projet_url": "https:\/\/projet2.ct.ws\/"
+        }
+    },
+    {
+        "id": 17,
+        "title": "Projet Boutique en Ligne - Jakarta EE",
+        "slug": "projet-boutique-en-ligne-jakarta-ee",
+        "date": "2025-03-07 10:00:00",
+        "modified": "2025-03-07 10:00:00",
+        "status": "publish",
+        "excerpt": "Application de gestion de boutique en ligne avec connexion client, gestion de panier et génération de factures.",
+        "content": "",
+        "fields": {
+            "projet_image": "dist/uploads/2025/03/jakarta1.png",
+            "projet_made_with": [
+                "JAVA",
+                "JAKARTA EE",
+                "BOOTSTRAP",
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "projet_description": "Scénario fonctionnel : L'utilisateur (client) peut se connecter avec ses identifiants, voir la liste des produits, ajouter un ou plusieurs produits à son panier (via session) et générer une facture simulée avec les éléments sélectionnés. Le projet inclut la création d'une base de données MySQL nommée boutique_db avec ses tables clients, produits, factures et facture_produits. Les fonctionnalités sont implémentées dans un projet Jakarta EE (Maven + JPA) avec des JSP et Servlets pour la connexion client, l'affichage des produits, la gestion du panier et la confirmation de commande.",
+            "projet_url": "https://github.com/micha-dev87/Projet-Boutique-Jakarta-EE"
         }
     }
 ]

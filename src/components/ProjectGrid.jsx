@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ExternalLink, Code, Loader } from 'lucide-react';
-// Make sure the path is correct for your project structure
+import { ExternalLink, Code, Loader, GitBranchPlus } from 'lucide-react';
+// Assurez-vous que le chemin est correct pour la structure de votre projet
 import projectData from '/data/projet.json';
 
 const ProjectGrid = () => {
@@ -10,37 +10,36 @@ const ProjectGrid = () => {
 
   useEffect(() => {
     try {
-      // Use local JSON data
-      console.log('Project data loaded:', projectData);
+      // Utiliser les données JSON locales
+      console.log('Données du projet chargées :', projectData);
       setProjects(projectData);
     } catch (err) {
-      console.error('Error loading project data:', err);
-      setError('Failed to load project data: ' + err.message);
+      console.error('Erreur lors du chargement des données du projet :', err);
+      setError('Échec du chargement des données du projet : ' + err.message);
     } finally {
       setLoading(false);
     }
   }, []);
 
-  // Helper function to get the best available image size and transform the URL
+  // Fonction d'aide pour obtenir la meilleure taille d'image disponible et transformer l'URL
   const getBestImageUrl = (imageObj) => {
     if (!imageObj) return null;
     
     let imageUrl = null;
     
-    // Try to get medium_large or large image first for better quality
-    if (imageObj.sizes && imageObj.sizes.medium_large) imageUrl = imageObj.sizes.medium_large;
-    else if (imageObj.sizes && imageObj.sizes.thumbnail) imageUrl = imageObj.sizes.thumbnail;
-    else if (imageObj.sizes && imageObj.sizes.large) imageUrl = imageObj.sizes.large;
-    else if (imageObj.sizes && imageObj.sizes.medium) imageUrl = imageObj.sizes.medium;
-    else if (imageObj.url) imageUrl = imageObj.url;
-    else return null;
+    // Essayer d'obtenir d'abord une image medium_large ou large pour une meilleure qualité
+    if (imageObj) {
+      imageUrl = imageObj;
+    }
     
-    // Transform the URL for both development and production
+    // Transformer l'URL pour le développement et la production
     if (imageUrl) {
-      // Replace WordPress URL with local path
-      const localPath = imageUrl.replace('https://wordpress-data.free.nf/wp-content/', '');
+      // Remplacer l'URL WordPress par le chemin local si elle contient le lien spécifique
+      const localPath = imageUrl.includes('https://wordpress-data.free.nf/wp-content/') 
+        ? imageUrl.replace('https://wordpress-data.free.nf/wp-content/', '') 
+        : imageUrl;
       
-      // Handle both development and production paths
+      // Gérer les chemins de développement et de production
       return localPath;
     }
     
@@ -58,7 +57,7 @@ const ProjectGrid = () => {
   if (error) {
     return (
       <div className="alert alert-error shadow-lg">
-        <span>Failed to load projects: {error}</span>
+        <span>Échec du chargement des projets : {error}</span>
       </div>
     );
   }
@@ -74,8 +73,8 @@ const ProjectGrid = () => {
                 alt={project.title} 
                 className="w-full h-full object-cover" 
                 onError={(e) => {
-                  console.error(`Failed to load image for project ${project.id}`);
-                  // Utiliser une image de fallback
+                  console.error(`Échec du chargement de l'image pour le projet ${project.id}`);
+                  // Utiliser une image de secours
                   e.target.src = '/placeholder.jpg';
                 }}
               />
@@ -108,7 +107,7 @@ const ProjectGrid = () => {
                   className="btn btn-primary btn-sm gap-2"
                 >
                   Voir le projet
-                  <ExternalLink size={16} />
+                  {project.fields.projet_url.includes('github') ? <GitBranchPlus size={16} /> : <ExternalLink size={16} />}
                 </a>
               </div>
             )}
