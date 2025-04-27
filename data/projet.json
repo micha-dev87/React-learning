@@ -103,7 +103,12 @@
                 "BOOTSTRAP",
                 "HTML",
                 "CSS",
-                "JS"
+                "JS",
+                "MYSQL",
+                "JSP",
+                "SERVLET",
+                "JPA",
+                "JDBC"
             ],
             "projet_description": "Scénario fonctionnel : L'utilisateur (client) peut se connecter avec ses identifiants, voir la liste des produits, ajouter un ou plusieurs produits à son panier (via session) et générer une facture simulée avec les éléments sélectionnés. Le projet inclut la création d'une base de données MySQL nommée boutique_db avec ses tables clients, produits, factures et facture_produits. Les fonctionnalités sont implémentées dans un projet Jakarta EE (Maven + JPA) avec des JSP et Servlets pour la connexion client, l'affichage des produits, la gestion du panier et la confirmation de commande.",
             "projet_url": "https://github.com/micha-dev87/Projet-Boutique-Jakarta-EE"
