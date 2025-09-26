@@ -1,18 +1,13 @@
-# Dockerfile pour React-learning avec Vite
-FROM node:18-alpine as build
+# --- Étape 1 : Build ---
+FROM node:18-alpine AS build
 
 WORKDIR /app
 
 # Copier les fichiers package.json et package-lock.json
-COPY package.json package-lock.json* ./
+COPY package*.json ./
 
-# Installer les dépendances
+# Installer toutes les dépendances (y compris devDependencies)
 RUN npm ci
-
-RUN ls -l node_modules/.bin && npm list vite
-
-RUN chmod +x node_modules/.bin/vite
-
 
 # Copier le code source
 COPY . .
@@ -20,11 +15,11 @@ COPY . .
 # Construire l'application avec Vite
 RUN npm run build
 
-# Vérifier que le build s'est bien passé
+# Vérifier que le build a produit dist/index.html
 RUN ls -la dist/ && test -f dist/index.html
 
-# Stage de production avec Nginx
-FROM nginx:alpine
+# --- Étape 2 : Production ---
+FROM nginx:alpine AS production
 
 # Copier les fichiers construits depuis Vite (dossier dist/)
 COPY --from=build /app/dist /usr/share/nginx/html
