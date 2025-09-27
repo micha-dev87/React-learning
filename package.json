@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://micha-dev87.github.io/React-learning",
   "scripts": {
     "dev": "vite",
     "build": "npx vite build",
