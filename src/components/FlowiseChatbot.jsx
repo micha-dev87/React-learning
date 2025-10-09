@@ -101,7 +101,7 @@ const FlowiseChatbot = () => {
                         textColor: '#303235',
                         text: 'Cree par',
                         company: 'Michel Ange',
-                        companyLink: 'https://flowiseai.com'
+                        companyLink: 'https://portfolio.bienetresante.shop/'
                     }
                 }
             }}
