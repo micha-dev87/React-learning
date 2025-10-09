@@ -35,8 +35,8 @@ function App() {
                 </div>
               </h1>
               <p className="py-6 text-lg opacity-80">
-                Bienvenue sur mon portfolio. Je conçois et développe des applications web modernes,
-                robustes et évolutives pour répondre aux besoins spécifiques de chaque projet.
+                Diplômé AEC du Cégep Gérald-Godin avec plus de 3 ans d'expérience en développement.
+                Je crée des applications web modernes, robustes et performantes adaptées aux besoins de chaque projet.
               </p>
               <button
                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}

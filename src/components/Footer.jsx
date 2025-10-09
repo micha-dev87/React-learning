@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  Phone, 
-  Mail, 
-  Github, 
-  Linkedin, 
-  MapPin, 
+import {
+  Phone,
+  Mail,
+  Github,
+  Linkedin,
+  MapPin,
   Code,
   ArrowUp
 } from 'lucide-react';
@@ -49,10 +49,10 @@ const Footer = () => {
           <div className="text-center mt-4 flex flex-col items-center">
             <span className="footer-title opacity-100 text-primary">Social</span>
             <div className="flex justify-center gap-4 mt-2">
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-square">
+              <a href="https://github.com/micha-dev87" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-square">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-square">
+              <a href="https://www.linkedin.com/in/tamgho-fogue-michel-ange/" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-square">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -62,8 +62,8 @@ const Footer = () => {
           <div className="text-sm">
             © {new Date().getFullYear()} - Tous droits réservés
           </div>
-          <button 
-            onClick={scrollToTop} 
+          <button
+            onClick={scrollToTop}
             className="btn btn-circle btn-primary btn-sm"
           >
             <ArrowUp size={16} />

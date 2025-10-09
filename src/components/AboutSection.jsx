@@ -1,10 +1,10 @@
 import React from 'react';
-import { 
-  Code, 
-  Database, 
-  Globe, 
-  PenTool, 
-  Server, 
+import {
+  Code,
+  Database,
+  Globe,
+  PenTool,
+  Server,
   Terminal,
   Layers,
   Smartphone
@@ -14,22 +14,22 @@ const skills = [
   {
     category: "Frontend",
     icon: <Globe className="w-6 h-6 text-primary" />,
-    technologies: ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "TailwindCSS", "SASS", "JQuery"]
+    technologies: ["React", "VueJS", "TypeScript", "JavaScript", "HTML/CSS", "TailwindCSS", "Bootstrap", "Ajax", "jQuery", "React Native", "Expo"]
   },
   {
     category: "Backend",
     icon: <Server className="w-6 h-6 text-primary" />,
-    technologies: ["PHP", "LARAVEL", "C#", "ASP.NET/MVC", "ASP.NET/CORE", "ASP.NET/WEB API", "Python", "JAVA"]
+    technologies: ["PHP", "C#", "JAVA", "ASP.NET/MVC", "ASP.NET/CORE", "JAKARTA EE", "Spring MVC", "Hibernate"]
   },
   {
-    category: "Database",
+    category: "Base de données",
     icon: <Database className="w-6 h-6 text-primary" />,
-    technologies: ["SQL", "MySQL", "Firebase", "ADO/NET", "LINQ", "ENTITYFRAMEWORK/CORE/CODE FIRST"]
+    technologies: ["SQL", "MySQL", "ADO/NET", "Entity Framework Core", "LINQ", "Modélisation de données"]
   },
   {
-    category: "Tools & Platforms",
-    icon: <PenTool className="w-6 h-6 text-primary" />,
-    technologies: ["Wordpress", "Scaffolded", "ReactNative", "Expo"]
+    category: "Services Web & Outils",
+    icon: <Terminal className="w-6 h-6 text-primary" />,
+    technologies: ["RESTful", "SOAP", "SpringBoot", "Docker", "Git", "WordPress", "UML"]
   }
 ];
 
@@ -42,7 +42,8 @@ const AboutSection = () => {
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">À propos de moi</span>
           </h2>
           <p className="text-lg max-w-2xl mx-auto opacity-80">
-            Développeur web passionné par la création d'applications modernes et performantes avec une grande maîtrise des technologies actuelles.
+            Diplômé AEC en Programmation Web (2025) avec plus de 3 ans d'expérience en développement PHP,
+            administration de bases de données et création d'applications web full-stack.
           </p>
         </div>
 
@@ -55,9 +56,10 @@ const AboutSection = () => {
                   Développeur Web Full-Stack
                 </h3>
                 <p className="mb-6 opacity-80">
-                  Spécialisé dans le développement d'applications web modernes et réactives, 
-                  je combine une expertise frontend et backend pour créer des solutions complètes 
-                  et adaptées aux besoins du client.
+                  Développeur web full-stack diplômé du programme AEC en Programmation des technologies Web
+                  au Cégep Gérald-Godin (juin 2025). Passionné par la conception d'applications modernes et
+                  performantes, je maîtrise le développement frontend et backend afin de créer des solutions
+                  complètes, efficaces et adaptées aux besoins des utilisateurs.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <div className="badge badge-primary badge-outline p-3">Responsive Design</div>

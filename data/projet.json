@@ -1,77 +1,80 @@
 [
     {
         "id": 26,
-        "title": "App de Gestion d'Utilisateurs",
+        "title": "Application de Gestion d'Utilisateurs",
         "slug": "app-de-gestion-dutilisateurs",
         "date": "2025-03-06 14:38:19",
         "modified": "2025-03-06 14:45:20",
         "status": "publish",
-        "excerpt": "",
+        "excerpt": "Application web pour gérer une liste d'utilisateurs avec Node.js, Express et Pug",
         "content": "",
         "fields": {
             "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/20250303_065344410_iOS-768x1662.png",
             "projet_made_with": [
-                "ReactNative",
-                "JavaScript",
-                "HTML\/CSS"
+                "Node.js",
+                "Express",
+                "Pug",
+                "Bootstrap",
+                "Axios"
             ],
-            "projet_description": "L'application permet : 1.   D'afficher une liste d'utilisateurs avec leurs photos. 2.   D'ajouter et de supprimer des utilisateurs de la liste. 3.   De naviguer vers un écran de détails où l'utilisateur peut voir une image plus grande. 4.   D'enregistrer un nouvel utilisateur via un formulaire avec validation.",
+            "projet_description": "Application web pour gérer une liste d'utilisateurs. Architecture Backend API REST + Frontend. L'application permet d'afficher, ajouter, modifier et supprimer des utilisateurs. Interface utilisateur moderne avec Bootstrap.",
             "projet_url": "https://github.com/micha-dev87/Application-expo-gestion-des-utilisateurs"
         }
     },
     {
         "id": 20,
-        "title": "Projet ASP (CORE)  - Gestion Automobile",
+        "title": "Projet ASP.NET CORE - Gestion Automobile",
         "slug": "projet-asp-core-gestion-automobile",
         "date": "2025-03-05 17:01:47",
         "modified": "2025-03-06 03:59:06",
         "status": "publish",
-        "excerpt": "",
+        "excerpt": "Application complète de gestion d'un parc automobile avec authentification utilisateur",
         "content": "",
         "fields": {
             "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/Razor-page-Auto-768x378.png",
             "projet_made_with": [
                 "SQL",
-                "HTML\/CSS",
+                "HTML/CSS",
                 "C#",
-                "ASP.NET\/CORE",
-                "ADO\/NET",
-                "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
+                "ASP.NET/CORE",
+                "ADO/NET",
+                "Entity Framework Core"
             ],
-            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l'identifiant de sa marque et l'identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L'application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_description": "Développement d'une application permettant de gérer un parc automobile. Gestion des autos par marque, modèle, couleur et identifiant. Système d'authentification et gestion des utilisateurs. Architecture MVC moderne avec Entity Framework Core.",
             "projet_url": "https://github.com/micha-dev87/ASP-NET-CORE-MVC"
         }
     },
     {
         "id": 16,
-        "title": "Projet ASP MVC - Gestion Automobile",
+        "title": "Projet ASP.NET MVC - Gestion Automobile",
         "slug": "projet-asp-gestion-automobile",
         "date": "2025-03-05 17:00:23",
         "modified": "2025-03-06 03:52:51",
         "status": "publish",
-        "excerpt": "",
+        "excerpt": "Application de gestion automobile avec architecture MVC",
         "content": "",
         "fields": {
             "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/MVC-Page-Auto-768x378.png",
             "projet_made_with": [
                 "JavaScript",
-                "HTML\/CSS",
-                "ASP.NET\/MVC",
-                "ADO\/NET",
-                "ENTITYFRAMEWORK\/CORE\/CODE FIRT"
+                "HTML/CSS",
+                "C#",
+                "ASP.NET/MVC",
+                "ADO/NET",
+                "Entity Framework"
             ],
-            "projet_description": "Une application qui permet de gérer des autos selon leurs marques et leurs couleurs. Chaque auto est définie par son identifiant, son nom, son modèle, l'identifiant de sa marque et l'identifiant de sa couleur. Chaque marque est définie par son identifiant et son nom de marque. L'application permet aussi la gestion des connexions des utilisateurs.",
+            "projet_description": "Application de gestion d'un parc automobile développée avec ASP.NET MVC. Gestion complète des véhicules par marque, modèle et couleur. Système d'authentification intégré. Architecture Model-View-Controller pour une séparation claire des responsabilités.",
             "projet_url": "https://github.com/micha-dev87/ASP-NET-CORE-MVC"
         }
     },
     {
         "id": 14,
-        "title": "Gestion d'annonce",
+        "title": "Gestion d'annonces",
         "slug": "14",
         "date": "2025-03-05 16:33:47",
         "modified": "2025-03-06 03:53:13",
         "status": "publish",
-        "excerpt": "",
+        "excerpt": "Site web de petites annonces similaire à LesPAC",
         "content": "",
         "fields": {
             "projet_image": "https:\/\/wordpress-data.free.nf\/wp-content\/uploads\/2025\/03\/projet-gestion-des-annonces-768x400.png",
@@ -79,38 +82,33 @@
                 "SQL",
                 "MySQL",
                 "JavaScript",
-                "HTML\/CSS",
+                "HTML/CSS",
                 "PHP"
             ],
-            "projet_description": "Site Web de petites annonces, genre LesPAC, réservé dans un premier temps au personnel du cé- gep, du moins jusqu'à ce que l'application soit complètement rodée, et éventuellement à toute la communauté collégiale.",
+            "projet_description": "Site web de petites annonces similaire à LesPAC. Fonctionnalités: Publication et recherche d'annonces, catégorisation des produits, gestion des utilisateurs, système de filtrage avancé. Interface intuitive et responsive.",
             "projet_url": "https:\/\/projet2.ct.ws\/"
         }
     },
     {
         "id": 17,
-        "title": "Projet Boutique en Ligne - Jakarta EE",
-        "slug": "projet-boutique-en-ligne-jakarta-ee",
+        "title": "Projet JAKARTA EE - TEAMGIFTS",
+        "slug": "projet-jakarta-teamgifts",
         "date": "2025-03-07 10:00:00",
         "modified": "2025-03-07 10:00:00",
         "status": "publish",
-        "excerpt": "Application de gestion de boutique en ligne avec connexion client, gestion de panier et génération de factures.",
+        "excerpt": "Application web qui permet l'organisation collective de cadeaux",
         "content": "",
         "fields": {
             "projet_image": "uploads/2025/03/jakarta1.png",
             "projet_made_with": [
-                "JAVA",
+                "JavaScript",
+                "HTML/CSS",
                 "JAKARTA EE",
-                "BOOTSTRAP",
-                "HTML",
-                "CSS",
-                "JS",
-                "MYSQL",
-                "JSP",
-                "SERVLET",
                 "JPA",
-                "JDBC"
+                "Hibernate",
+                "jQuery"
             ],
-            "projet_description": "Scénario fonctionnel : L'utilisateur (client) peut se connecter avec ses identifiants, voir la liste des produits, ajouter un ou plusieurs produits à son panier (via session) et générer une facture simulée avec les éléments sélectionnés. Le projet inclut la création d'une base de données MySQL nommée boutique_db avec ses tables clients, produits, factures et facture_produits. Les fonctionnalités sont implémentées dans un projet Jakarta EE (Maven + JPA) avec des JSP et Servlets pour la connexion client, l'affichage des produits, la gestion du panier et la confirmation de commande.",
+            "projet_description": "Application web qui permet l'organisation collective de cadeaux. Les utilisateurs peuvent créer des événements, proposer des cadeaux, gérer les contributions et coordonner les achats en groupe. Architecture Jakarta EE avec JPA et Hibernate pour la persistance des données.",
             "projet_url": "https://github.com/micha-dev87/Projet-Boutique-Jakarta-EE"
         }
     }
