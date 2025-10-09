@@ -7,6 +7,11 @@
 set -e
 
 echo "🔨 Début du rebuild complet du portfolio..."
+echo "Recuperer les mises a jour"
+git pull
+sleep 5
+
+gi
 
 # Couleurs pour les logs
 GREEN='\033[0;32m'
@@ -34,6 +39,8 @@ echo -e "${GREEN}✅ Build React terminé${NC}"
 # 2. Arrêter le conteneur portfolio
 echo -e "${YELLOW}🛑 Arrêt du conteneur portfolio...${NC}"
 cd ..
+sleep 5
+
 docker-compose stop portfolio
 
 # 3. Rebuild de l'image Docker (sans cache)
