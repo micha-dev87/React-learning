@@ -10,7 +10,7 @@ import {
   Smartphone
 } from 'lucide-react';
 
-const skills = [
+const skills = [ 
   {
     category: "Frontend",
     icon: <Globe className="w-6 h-6 text-primary" />,
