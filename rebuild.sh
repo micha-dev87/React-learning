@@ -11,7 +11,6 @@ echo "Recuperer les mises a jour"
 git pull
 sleep 5
 
-gi
 
 # Couleurs pour les logs
 GREEN='\033[0;32m'
@@ -24,6 +23,8 @@ if [ ! -f "package.json" ]; then
     echo -e "${RED}❌ Erreur: package.json introuvable. Êtes-vous dans le dossier du portfolio ?${NC}"
     exit 1
 fi
+
+npm install
 
 # 1. Build de l'application React
 echo -e "${YELLOW}📦 Build de l'application React...${NC}"
