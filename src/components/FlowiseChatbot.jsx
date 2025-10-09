@@ -19,7 +19,7 @@ const FlowiseChatbot = () => {
                     size: 48,
                     dragAndDrop: true,
                     iconColor: 'white',
-                    customIconSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
+                    customIconSrc: 'chat-icon.svg',
                     autoWindowOpen: {
                         autoOpen: true,
                         openDelay: 2,
@@ -47,7 +47,7 @@ const FlowiseChatbot = () => {
                 chatWindow: {
                     showTitle: true,
                     showAgentMessages: true,
-                    title: 'Assistant Portfolio',
+                    title: 'Assistant de Michel Ange',
                     titleAvatarSrc: 'https://raw.githubusercontent.com/walkxcode/dashboard-icons/main/svg/google-messages.svg',
                     welcomeMessage: 'Bonjour ! Je suis l\'assistant de Michel Ange. Comment puis-je vous aider aujourd\'hui ?',
                     errorMessage: 'Désolé, une erreur s\'est produite. Veuillez réessayer.',
@@ -69,7 +69,7 @@ const FlowiseChatbot = () => {
                         backgroundColor: '#f7f8ff',
                         textColor: '#303235',
                         showAvatar: true,
-                        avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/parroticon.png'
+                        avatarSrc: 'https://media.licdn.com/dms/image/v2/D4E35AQEmrvVmvJoFaw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1714939966393?e=1760605200&v=beta&t=cu8Uciry5WExorcaND7wOOerUhoWwP441vwNcoYb-w0'
                     },
                     userMessage: {
                         backgroundColor: '#3B81F6',

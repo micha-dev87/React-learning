@@ -24,6 +24,8 @@ if [ ! -f "package.json" ]; then
     exit 1
 fi
 
+npm install
+
 # 1. Build de l'application React
 echo -e "${YELLOW}📦 Build de l'application React...${NC}"
 npm run build
