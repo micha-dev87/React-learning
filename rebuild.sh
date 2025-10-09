@@ -11,7 +11,6 @@ echo "Recuperer les mises a jour"
 git pull
 sleep 5
 
-gi
 
 # Couleurs pour les logs
 GREEN='\033[0;32m'
