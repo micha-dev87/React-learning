@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: 3000  // ⚠️ Ce port est seulement pour le dev server, pas pour la production
+    port: 9000  // ⚠️ Ce port est seulement pour le dev server, pas pour la production
   },
   build: {
     outDir: 'dist',

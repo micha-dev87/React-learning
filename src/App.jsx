@@ -4,13 +4,14 @@ import AboutSection from './components/AboutSection';
 import ProjectsSection from './components/ProjectsSection';
 import Footer from './components/Footer';
 import DownloadButton from './components/DownloadButton';
+import FlowiseChatbot from './components/FlowiseChatbot';
 import Typewriter from 'typewriter-effect';
 
 function App() {
   return (
     <div className="min-h-screen bg-base-100" id="top">
       <Header />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="hero min-h-screen bg-base-200 bg-gradient-to-br from-base-100 to-base-300">
@@ -34,10 +35,10 @@ function App() {
                 </div>
               </h1>
               <p className="py-6 text-lg opacity-80">
-                Bienvenue sur mon portfolio. Je conçois et développe des applications web modernes, 
+                Bienvenue sur mon portfolio. Je conçois et développe des applications web modernes,
                 robustes et évolutives pour répondre aux besoins spécifiques de chaque projet.
               </p>
-              <button 
+              <button
                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
                 className="btn btn-primary btn-lg mt-4"
               >
@@ -46,13 +47,14 @@ function App() {
             </div>
           </div>
         </section>
-        
+
         <AboutSection />
         <ProjectsSection />
       </main>
-      
+
       <Footer />
       <DownloadButton cvUrl="uploads/2025/03/cv.pdf" />
+      <FlowiseChatbot />
     </div>
   );
 }
